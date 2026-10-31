@@ -12,3 +12,4 @@ Repositorio de skills del equipo. Cada skill es una carpeta plana `skills/<nombr
 - **Índice generado.** Tras cambiar un `SKILL.md` o `categorias.json`, ejecuta `python3 scripts/skills.py indice` y no edites `skills/README.md` a mano.
 - **Antes de hacer commit** ejecuta `python3 scripts/skills.py validar`. Comprueba que el YAML se lee, que `name` coincide con la carpeta, que la descripción tiene como máximo 1024 caracteres y que la skill está en una categoría.
 - Al entrecomillar descripciones: si la descripción contiene `: `, va entre comillas dobles.
+- **Procedencia.** Cada skill tiene su origen en `SOURCES.md`. Si añades una skill, añade también su fila.
