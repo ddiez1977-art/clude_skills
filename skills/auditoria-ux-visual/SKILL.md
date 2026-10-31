@@ -1421,7 +1421,7 @@ function posicionarPanel(panel, anchorEl) {
 
 ---
 
-## 🧩 Lecciones de JoGaSan Academy (auditoría del 11-oct-2026: 1º ESO, 4º Primaria y El Rincón de Santi)
+## 🧩 Lecciones de JoGaSan Academy (auditoría del 11-oct-2026: 1º ESO, 4º Primaria y el área infantil)
 
 > Copia del repo (`.claude/skills/auditoria-ux-visual/`); la versión de la cuenta ya lleva estas lecciones (12-oct). Si cambias una, cambia la otra.
 
@@ -1458,7 +1458,7 @@ local; viewports 320, 344, 390, 768, 844×390 y 1280): mide, arregla, **vuelve a
 7. **Botón flotante ⛶ de pantalla completa:** reserva su sitio (52 px a cada lado del título del héroe) o
    pisa el título. Si bajas una fila para esquivarlo, que la banda vacía no sobreviva donde hay sitio
    (≥ 372 px).
-8. **Rincón de Santi (5 años, no lee):** menos tarjetas apiladas y más **azulejos** (emoji grande + nombre;
+8. **Área infantil (niño de 5 años, no lee):** menos tarjetas apiladas y más **azulejos** (emoji grande + nombre;
    la voz lee); la burbuja de Chispa en horizontal en el borde de abajo y pequeña; HUD no sticky en
    horizontal; el viaje de amigas entero en una fila. Mundos en 2 columnas solo si el nombre por
    sílabas cabe (reduce emoji y fuente).
