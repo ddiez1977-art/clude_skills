@@ -98,3 +98,25 @@ Inteligencia de diseño UI/UX para web, móvil y escritorio. Úsala al diseñar,
 
 Cómo escribir Swift moderno: tipos de valor, seguridad de datos y concurrencia de Swift 6 (@concurrent, actores, task groups), protocolos y genéricos, diseño de API, rendimiento y ARC, Swift Testing y macros. Úsala al escribir, revisar o migrar Swift, o al arreglar errores de concurrencia, bloqueos, ciclos de retención o rendimiento.
 
+
+## threejs
+
+Conocimiento actual y verificado de three.js r186, React Three Fiber 9.8 + drei y gltf-transform, en WebGL y en WebGPU/TSL. Úsala siempre que haya que escribir, revisar o depurar código 3D con three.js, WebGL o WebGPU: escenas, cámaras, renderer, geometrías, instancing, materiales PBR, texturas, UV, luces y sombras, HDR, shaders GLSL y TSL, animación, glTF/GLB, Draco, KTX2, controles, raycasting, postprocesado (bloom, SSAO), rendimiento, memoria y React Three Fiber. También para optimizar o validar modelos 3D y para migrar código antiguo (RGBELoader, Clock, PostProcessing).
+
+## auditoria-pedagogica-jogasan
+
+Auditor e Inspector Integral de Experiencias Educativas de JoGaSan Academy. Evalúa código (HTML/CSS/JS vanilla), contenidos didácticos y mecánicas de gamificación de las academias de 3º, 4º y 6º de Primaria, 1º ESO y el Rincón de Santi (Infantil). Aplica rúbrica de 4 pilares: Rigor Curricular, UX/Accesibilidad TDAH, Motivación/Gamificación y Trazabilidad Docente. Úsala SIEMPRE que el usuario pida "auditar" una pantalla, módulo, quiz, actividad, teoría o examen del portal. También cuando diga "revisar contenido", "validar ejercicio", "inspeccionar quiz", "comprobar teoría", "revisar chunk", "validar medalla", "comprobar trazabilidad", "lupa del profe", "chip de lectura", o al pegar código HTML/JS de una academia para revisión. Activa también ante: "¿está bien esto para 3º?", "¿es correcto para 6º?", "¿cumple currículum?", "revisa si el quiz captura errores", "valida la gamificación", o al mencionar una academia específica (Geometría, Inglés, Naturales, etc.) junto con cualquier petición de revisión.
+
+
+## clonar-academia
+
+Protocolo para crear una academia nueva en JoGaSan Academy (Netlify + Supabase) y para AUDITAR las existentes. Úsala con "crear una academia nueva", "añadir Sociales 3º", "hacer Música 6º", al dudar si una academia está completa y ante divergencias: medallas distintas, barra de progreso ausente, diploma que no se desbloquea, quiz sin leer la teoría, fallos negativos, botones repetidos. También con "apuntes del profe", "📒 Apuntes de clase", "módulo nuevo de 1º ESO", "juegos para memorizar"; antes de añadir contenido, antes de editar un HTML generado (s56) y al escribir preguntas (s65). Alta = UNA entrada en catalogo.js. Auditoría: node scripts/validar-academias.js (bloquea el deploy). 89 síntomas (s80-s89: figuras SVG, texto de figura, datos dudosos, main/produccion, teoría exhaustiva, juegos, entregas, chuletas A4, sesiones paralelas), FASE 3.5 y 3.6.
+
+
+## ventas-b2b
+
+Kit completo de ventas B2B en español. Actívala con /ventas-b2b para elegir entre: Discovery, Manejo de objeciones, Cualificación de leads, Posicionamiento competitivo y Cierre de ventas. Adaptada al contexto MasOrange / SITyL / transporte y logística.
+
+## sistema-cognitivo
+
+Orquestador de las 5 skills cognitivas transversales: estructurador-mece, pragmatismo-esfuerzo, wording-ejecutivo, presentacion-de-datos y transmision-del-mensaje. Actívala SIEMPRE que el usuario arranque cualquier entregable con cierta complejidad: app, análisis, presentación, documento, conclusiones, email, modelo, propuesta, reunión. También con: 'aplica el sistema', 'qué skills activo', 'ayúdame a pensar esto', '/sistema', '/cognitivo', o cuando detectes que el output se beneficiaría de más de una skill. Pregunta al usuario cuáles activar, aplica todas, o elige un mix razonado según el tipo de entregable. Nunca activa las 5 por defecto sin calibrar — el pragmatismo también aplica al propio sistema.
