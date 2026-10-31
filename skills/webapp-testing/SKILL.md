@@ -623,12 +623,12 @@ no en el render.
    se había insertado en 11 de 18 ficheros porque el `replace` no encontró el texto
    (`var x = {}` con espacios). Afirma siempre el nº de coincidencias.
 
-## 🆕 Lecciones del 24-sep (tarde) — conteo, Rincón de Santi, ficha de medallas
+## 🆕 Lecciones del 24-sep (tarde) — conteo, área infantil, ficha de medallas
 
 10. **Multitoque**: repite el clic en la respuesta correcta y en «Comprobar» (2 y 3
     veces seguidas, sin esperar). Exige `correctas <= total`, el nº de preguntas
     vistas y **una sola** pantalla de resultado. Así salieron el 12/6 de Mates 3º y
-    el −37 de Santi (síntoma 57 de `clonar-academia`).
+    el −37 de un alumno de infantil (síntoma 57 de `clonar-academia`).
 11. **Voz simulada**: `addInitScript` con un `speechSynthesis` falso cuyo `onend`
     salta a 1 s por frase. Chromium sin voces termina las narraciones en
     milisegundos y los fallos de turnos/cortes no se ven.

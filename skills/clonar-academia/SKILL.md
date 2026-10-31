@@ -1689,7 +1689,7 @@ que lo borra sin avisar: así se acumularon 86 SVG y una corrección pedagógica
 
 ## 🆕 ANTI-PATRONES del 24-sep (tarde) — conteo, atribución, medallas y repaso (PR #87 · #101 · #103 · #107)
 
-Origen: Santi aparecía en el panel con **−37 respuestas falladas**. Se investigó
+Origen: un alumno de infantil aparecía en el panel con **−37 respuestas falladas**. Se investigó
 primero con SQL de solo lectura en producción y cada fallo se reprodujo con el
 código viejo antes de arreglarlo.
 
@@ -1700,7 +1700,7 @@ Dos variantes del mismo error: la entrada que ya respondió sigue viva.
   evaluaba dos veces → 12/6 en el panel.
   Arreglo: `data-comprobado="1"` al comprobar (y `if (btn.dataset.comprobado==='1') return;`),
   o `input.disabled = true` en `makeOperacion`.
-- **Rincón de Santi:** la opción correcta seguía activa ~900 ms tras acertar. Cada
+- **Área infantil:** la opción correcta seguía activa ~900 ms tras acertar. Cada
   toque de más sumaba un acierto **y saltaba una ronda**: doble toque → veía 2 de 4
   preguntas y se guardaba 4/4; triple → 6/4 (fallos negativos) y 3 pantallas de
   resultado (premios repetidos). Arreglo: `cerrarRonda()` cierra cada ronda UNA vez
@@ -1713,7 +1713,7 @@ Dos variantes del mismo error: la entrada que ya respondió sigue viva.
 `Catalogo.academiaDePath` comparaba `indexOf('/'+carpeta) === p.length - carpeta.length - 1`:
 con una carpeta de la misma longitud que la ruta daba **`-1 === -1` → verdadero**.
 99 rutas de 40 academias mal (la URL de carpeta de Netlify `/<acad>/`, el `start_url`
-de la PWA de Santi).
+de la PWA del niño).
 - Arreglo: comprobar `idx !== -1`; `registrarQuiz` corrige `academia_id` por el
   **prefijo del módulo** (el prefijo manda sobre la URL; cubre cachés con el catálogo viejo).
 - Check **«0 · URL»** en `validar-academias.js`: prueba `/<acad>/`, `/<acad>/index.html`
@@ -1995,7 +1995,7 @@ Regla del usuario: **un módulo por tema del profe** (GeH m3, Mates 1º ESO m7, 
   en el mapa (Mates 3º la tuvo días en la fila oculta: nadie podía abrirla, las pruebas la abrían por código). **La prueba pulsa el paso visible**, no el botón por código (s70).
 
 ### Síntoma 74 · Versiones, fusiones y regeneraciones entre sesiones paralelas (1-3 oct)
-- **Misma versión, distinto contenido:** tres veces dos ramas subieron a la vez `peque-engine`, `peque.css` y `rincon-santi-v…`. Al fusionar, **sube por encima de
+- **Misma versión, distinto contenido:** tres veces dos ramas subieron a la vez `peque-engine`, `peque.css` y `infantil-v…`. Al fusionar, **sube por encima de
   las dos** y vuelve a pasar `node scripts/sincronizar-version.js --comprobar`. Si una rama sube de 2 en 2, mira qué números están gastados.
 - **`git grep -n "<<<<<<<"` ANTES de commitear una fusión** (se colaron marcas en `sw.js` y `version-watchdog.js`, v405). Nunca `git stash` en medio de un merge
   (aborta la fusión): usa `git worktree add` para comparar con `main`.
@@ -2019,9 +2019,9 @@ lee `INVESTIGACION-JUEGOS-MEMORIZAR-2026-10-03.md` (8 reglas con su nivel de evi
   `COMO_MANUAL` + `COMO_ACCION` en `motivacion.js`, un solo `registrarMiniQuiz('<pref>juego_<modo>', aciertos, total)` al terminar. Vocabulario con imagen:
   `juegos-vocab.js` (`JuegosVocab.generadores`), con `ejEs` por frase si hay inglés. Receta de ~1 hora en la investigación (§5).
 - **Pruebas:** `probar-juegos-nuevos.js` (verbos), `probar-juegos-vocab-nuevos.js <carpeta> <prefijo>` (vocabulario), `probar-ruleta.js`, `probar-juegos-regresion.js`.
-- **El Rincón de Santi (`infantil5/`) tiene sus propias reglas** (Santi no lee): **🔊 en TODO lo que Santi tenga que leer** (usuario, 13-oct-2026: «aún no lee con fluidez», para no tener que repetirlo): no solo las tarjetas de respuesta; también las tarjetas de la portada, títulos y textos de sección, avisos, contadores, medallas, insignias, bandas de resultado y cualquier pantalla nueva o de temporada. Se hace con `ponOir(el, texto, 'es-ES', false)` (o `oirTemporada`), el mismo 🔊 de las tarjetas, que lee sin pulsar lo de debajo; los botones de acción ya lo llevan solos. Se aplica sin que nadie lo pida y se prueba: ningún bloque de texto visible sin `.o-oir`. Además: sílabas de colores + 🔊 en toda tarjeta con letras, la voz nunca dice la respuesta
+- **El área infantil (`infantil5/`) tiene sus propias reglas** (el niño no lee): **🔊 en TODO lo que el niño tenga que leer** (usuario, 13-oct-2026: «aún no lee con fluidez», para no tener que repetirlo): no solo las tarjetas de respuesta; también las tarjetas de la portada, títulos y textos de sección, avisos, contadores, medallas, insignias, bandas de resultado y cualquier pantalla nueva o de temporada. Se hace con `ponOir(el, texto, 'es-ES', false)` (o `oirTemporada`), el mismo 🔊 de las tarjetas, que lee sin pulsar lo de debajo; los botones de acción ya lo llevan solos. Se aplica sin que nadie lo pida y se prueba: ningún bloque de texto visible sin `.o-oir`. Además: sílabas de colores + 🔊 en toda tarjeta con letras, la voz nunca dice la respuesta
   antes de tocar en los juegos de leer, una trampa no puede sonar igual que la buena (KESO/QUESO), «no rima» tampoco en asonante, avanzar solo con `acierto()`/`cerrarRonda()`,
-  lo que Chispa dice sola va por `hablarSinCortar`. Juego nuevo: nota 23 de CONTEXT_ADN (`peque-contenido.js`, `peque-niveles.js`, `santi_<id>` en `catalogo.js` y en `infantil5/progreso.js`).
+  lo que Chispa dice sola va por `hablarSinCortar`. Juego nuevo: nota 23 de CONTEXT_ADN (`peque-contenido.js`, `peque-niveles.js`, `infantil_<id>` en `catalogo.js` y en `infantil5/progreso.js`).
 
 ### Síntoma 77 · Examen de bloque dentro de la academia (4-oct-2026)
 Pestaña «📝 Examen» de un bloque (primero: Geo-Historia 1º ESO m3). Contenido en `material/1eso/<carpeta>/examenes.json` (indexado por `moduloN`, opcional: sin entrada el HTML sale idéntico);
@@ -2251,7 +2251,7 @@ Se prueba imprimiendo a PDF con Playwright y mirando las páginas. Y la chuleta 
 - **Servidores de prueba**: `python3 -m http.server 8765/8899` muere entre llamadas (`setsid nohup … &`, comprueba con `curl -sI`); **nunca `pkill -f` con un patrón que esté en tu propio comando** (se mata a sí mismo); lanza lo largo en segundo plano y lee el log con `grep -a`.
 - **Un delta en `CONTEXT_ADN` tras cada PR** (título con PR, SW, pruebas); comprueba el hueco con `git log origin/main --merges` contra `grep "#NNN"`.
 - **Medi es la clase `.medi-flotante`**, no un id: al medir flotantes busca id **y** clase y mide a 1, 3, 6 y 9 s. **Nunca `background` inline** en un botón de un modal con tema propio (usa una clase y mide el contraste en el modal real).
-- Skills hermanas: lapbook de cartulina → `lapbook-fisico`; temas de temporada (Halloween, Navidad) → `temporadas-tematicas`; **El Rincón de Santi: 🔊 en todo lo que Santi tenga que leer** (`ponOir`/`oirTemporada`).
+- Skills hermanas: lapbook de cartulina → `lapbook-fisico`; temas de temporada (Halloween, Navidad) → `temporadas-tematicas`; **El área infantil: 🔊 en todo lo que el niño tenga que leer** (`ponOir`/`oirTemporada`).
 
 ### 🧪 Orden completo de pruebas (técnicas + contenido) antes de cada push que toque contenido
 | # | Comando | Qué garantiza | Para el deploy |
