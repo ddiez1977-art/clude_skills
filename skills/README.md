@@ -120,3 +120,60 @@ Kit completo de ventas B2B en español. Actívala con /ventas-b2b para elegir en
 ## sistema-cognitivo
 
 Orquestador de las 5 skills cognitivas transversales: estructurador-mece, pragmatismo-esfuerzo, wording-ejecutivo, presentacion-de-datos y transmision-del-mensaje. Actívala SIEMPRE que el usuario arranque cualquier entregable con cierta complejidad: app, análisis, presentación, documento, conclusiones, email, modelo, propuesta, reunión. También con: 'aplica el sistema', 'qué skills activo', 'ayúdame a pensar esto', '/sistema', '/cognitivo', o cuando detectes que el output se beneficiaría de más de una skill. Pregunta al usuario cuáles activar, aplica todas, o elige un mix razonado según el tipo de entregable. Nunca activa las 5 por defecto sin calibrar — el pragmatismo también aplica al propio sistema.
+
+## orange-style
+
+Aplica la identidad visual y las reglas de comunicación responsable del Grupo Orange (Orange, Orange España, Orange Empresas, MasOrange) a presentaciones .pptx, apps web, dashboards, HTML/React, documentos, firmas de correo, cabeceras LinkedIn/X, fondos de videollamada y cualquier entregable visual o de copy. Úsala SIEMPRE ante: "estilo Orange", "branding Orange", "/style", "estilo MasOrange", "presentación corporativa", "plantilla Orange España", "logo Orange", "firma de correo", paleta naranja-negro-blanco, o material comercial en nombre de Orange/MasOrange (propuestas, argumentarios, decks, landings, emails). También al colocar el logo, redactar claims comerciales o medioambientales, o publicar contenido generado con IA con marca Orange. Sustituye a masorange-style (obsoleta).
+
+
+## debug-html-monolito
+
+Protocolo de diagnóstico, auditoría y reparación de archivos HTML monolíticos grandes (un solo .html con CSS + JS embebidos: portales, argumentarios, dashboards). ACTIVA SIEMPRE QUE: HTML grande con CSS y JS inline y síntomas como pantalla en blanco, botones que no hacen nada, función no definida, layout roto, JS que se rompe al editar, overlay que no aparece, tab completamente invisible, variable JS duplicada, o bugs por edición iterativa. ACTIVAR TAMBIÉN para auditorías preventivas: "audita el portal", "pasa una revisión de integridad", "comprueba que todo funciona", "da una pasada antes del deploy". Cubre: checklist JS/HTML/CSS, referencias huérfanas, IDs faltantes, base64 en bloque de estilos, divs huérfanos fuera de contenedor, variables duplicadas, colisión CSS. Patrones extraídos de portales comerciales, academias educativas y dashboards reales.
+
+
+## svg-angulos-poligono
+
+Reglas exactas y código validado para dibujar arcos de ángulos interiores en polígonos SVG para JoGaSan Academy. Úsala SIEMPRE que vayas a dibujar un ángulo interior en un polígono SVG: cuando hagas figuras geométricas con ángulos marcados (triángulos, cuadriláteros, polígonos regulares/irregulares), cuando el usuario pida "marca los ángulos", "añade el símbolo de ángulo", "pon los grados dentro", o al crear SVGs de geometría para los módulos de la academia. Sin esta skill los arcos salen al revés o fuera de la figura.
+
+
+## auditoria-ux-visual
+
+Auditoría UX visual en webapps, Mobile-First. Úsala ante: "auditoría UX", "revisar diseño", "contraste", "responsive", "texto que no se ve", "en móvil se rompe", "modo oscuro falla", "botones pequeños", "se ve mal al sol", "en tablet/iPad/Fold/proyector", "z-index extraño", "tooltip recortado", "panel que se sale", "pared de texto", "scrollea varias pantallas", "demasiado texto", "página larguísima". También ante cambios visuales, pantallas nuevas o releases. Diagnostica plataforma (móvil/escritorio/híbrido): Thumb Zone, Safe Areas, Gestos, Densidad, Jerarquía, Atajos. Siempre: Gamificación y snippets CSS/JS. Eje 8: entorno físico. Incluye z-index stack, sidebar 767px, tooltips en body y clamp de paneles. Eje 11: densidad de lectura (sin paredes de texto; máx. 1,5 pantallas al entrar).
+
+
+## clonar-proyecto
+
+Protocolo para replicar cualquier proyecto web o app existente con el mínimo de iteraciones. Cuatro arquetipos: multi-archivo propio, monolito HTML propio, web externa (URL o captura), y propio sin código fuente. ACTIVA con: "quiero clonar X", "replica esta app", "haz algo parecido a Y", "toma esta web como base", "copia la estructura de", "pártete de este proyecto", "inspírate en esta URL", o cuando el usuario pegue URL, captura o código con intención de replicar. ACTIVAR TAMBIÉN: "la app no carga después del deploy", "Google Auth no funciona en producción", "Firebase no inicializa", "el ZIP no despliega bien", "error CORS en Storage", "spinner infinito en login". Cubre: inventario, limpieza de identidad, stack agnóstico, deploy y bugs frecuentes. Leer references/bugs-netlify-firebase.md para Netlify+Firebase. Academia JoGaSan nueva: delegar a clonar-academia. Bugs en monolito durante iteración: delegar a debug-html-monolito.
+
+
+## medi-adhd
+
+Agente educativo hiperespecializado en transformar contenido del portal Academia (teoría, quizzes, actividades, exámenes, retos pro) en experiencias ultra-atractivas para niños de 7-10 años con TDAH e impulsividad. Úsala cuando el usuario diga "adapta esto para niños con TDAH", "versión Medi-ADHD", "más dinámico para impulsivos", "gamifica contenido infantil", "estilo Medi", "/adhd", "/medi", o trabaje en módulos de Academia Portal de Repaso para niños 7-10. También con "atención corta", "dopamina", "micro-recompensas", "niños impulsivos", o al convertir teoría/quiz tradicional en formato jugable con Medi. Aplica neurociencia TDAH: dopamina cada 2-3 min, cambio de formato cada 4 min, máximo 12-15 palabras por frase, lenguaje de niño de 8 años emocionado (¡CRACK!, ¡BRUTAL!, ¡BOOM!), formatos jugables (Memory, Caza-topos, Carrera), recompensas escalonadas y Medi como copiloto. NO usar para adolescentes 12+, adultos, ni docs técnicas.
+
+## superpowers
+
+Metodología estructurada de desarrollo de software para agentes de IA. Actívala cuando vayas a desarrollar una feature compleja, refactorizar múltiples archivos, o cuando el usuario diga "planifica esto", "hazlo paso a paso", "brainstorming", "TDD", "debug sistemático", "haz un plan antes de codear", "revisa mi código", o ante cualquier tarea que requiera planificación antes de ejecutar. Previene el antipatrón de lanzarse a codear sin entender requisitos. Fases: Entender → Diseñar → Ejecutar (TDD: RED-GREEN-REFACTOR) → Revisar. Incluye debugging sistemático en 4 fases, planes de implementación en tareas de 2-5 minutos, code review por checklist, y brainstorming socrático. Compatible con proyectos vanilla JS, Firebase, Supabase y Netlify.
+
+## webapp-testing
+
+Toolkit de verificación runtime de webapps con Playwright: ejecuta la página en el navegador real y captura lo que el análisis estático no ve. Úsala SIEMPRE que: "verifica que funciona de verdad", "el modal no abre", "comprueba en el navegador", "test de regresión antes del deploy", "screenshot del estado actual", "el botón no hace nada", "errores en consola", "la sección aparece en blanco aunque el HTML existe", o cuando debug-html-monolito pasa limpio pero la página sigue rota. Complementa a debug-html-monolito (estático antes de guardar) y clonar-proyecto (smoke test F3 post-deploy). Esta skill es la capa de EJECUCIÓN real en el navegador. Ver references/INTEGRACION_SKILLS.md para los puntos exactos de handoff entre skills.
+
+
+## artifact-react-components
+
+Construye artifacts React interactivos en claude.ai con componentes ricos (tablas, gráficas, formularios, dashboards, KPIs, timelines, modales) usando las librerías ya disponibles en el sandbox: recharts, lucide-react, shadcn/ui, lodash, d3, papaparse. Úsala SIEMPRE que necesites un prototipo visual interactivo dentro del chat — un mockup para mostrar a un cliente, un dashboard de métricas para una reunión, un formulario de captura de datos, una tabla filtrable, un comparador de opciones, un wizard de pasos — sin salir a Netlify ni necesitar backend. Actívala con: "muéstrame cómo quedaría", "prototipo rápido", "mockup interactivo", "dashboard para la reunión", "tabla con filtros", "artifact con gráfica", "visualiza esto en el chat", "artifact React", "componente con shadcn", "cómo quedaría la pantalla", "demo visual", "simula la interfaz". NO usar para apps reales con backend/Firebase/Supabase → esas van a Netlify (stack vanilla). NO usar para documentos descargables → usar skill docx/pdf/pptx.
+
+
+## documentador-contexto-proyecto
+
+Arquitecto de Memoria y Documentación Técnica que consolida el conocimiento de un proyecto  en archivos Markdown listos para GitHub. Úsala SIEMPRE que el usuario pida generar o actualizar  README.md, CONTEXT_ADN.md o GUIAS_USO.md. Actívala cuando el usuario diga "documenta el proyecto",  "actualiza el contexto", "crea memoria del proyecto", "prepara el repositorio", "necesito  documentación", "transfiere el contexto a otra IA", "resume el historial de decisiones",  "escribe el ADN del proyecto", o quiera que una futura IA entienda el proyecto sin releer el chat. TAMBIÉN actívala proactivamente al final de sesiones de iteración: cuando se completa una  pantalla, módulo o feature ("ya funciona", "listo", "pasamos a lo siguiente", "siguiente pantalla"),  o cuando el usuario lleva varias iteraciones seguidas sobre el mismo proyecto (PWA, Firebase,  Supabase, dashboards). En esos casos, sugerir actualizar el CONTEXT_ADN.md con los cambios  de la sesión antes de continuar o cerrar la conversación.
+
+
+## html2pdf-export
+
+Estrategias probadas para exportar HTML complejo a PDF con html2pdf.js en aplicaciones vanilla JS (sin frameworks ni build step). Cubre: configuración óptima, reglas CSS de salto de página, patrón pre/post export para manipular DOM antes y después de la captura, unidades atómicas en tablas, elementos visibles solo en pantalla vs solo en PDF, y arquitectura de dos modos de salida (HTML navegable / PDF imprimible). Activar cuando: "exportar a PDF", "html2pdf", "pagebreak", "saltos de página", "documento imprimible", "generar PDF", "modo HTML vs PDF", o al construir cualquier feature de generación de documentos en herramientas web.
+
+
+## deep-research
+
+Use when the user needs multi-source research with citation tracking, evidence persistence, and structured report generation. Triggers on "deep research", "comprehensive analysis", "research report", "compare X vs Y", "analyze trends", or "state of the art". Not for simple lookups, debugging, or questions answerable with 1-2 searches.
