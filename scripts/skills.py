@@ -3,6 +3,7 @@
 
   python3 scripts/skills.py validar   # comprueba frontmatter, nombre, longitud y categoría
   python3 scripts/skills.py indice    # regenera skills/README.md desde los SKILL.md
+  python3 scripts/skills.py faltas    # lista ficheros citados que no existen -> FALTAN.md
 
 Requiere PyYAML. Sale con código 1 si la validación falla.
 """
@@ -96,11 +97,36 @@ def indice():
     return 0
 
 
+def faltas():
+    """Referencias a ficheros en SKILL.md que no existen dentro de la skill.
+    Heurística: algunas son ejemplos o rutas de proyecto, no dependencias reales."""
+    import re
+    res = []
+    for c in carpetas():
+        t = (c / "SKILL.md").read_text(encoding="utf-8")
+        refs = set(re.findall(r"`((?:[\w\-./]+/)?[\w\-]+\.(?:md|py|js|cjs|sh|json|csv|txt|html))`", t))
+        existentes = {p.name for p in c.rglob("*") if p.is_file()}
+        miss = sorted(r for r in refs if "*" not in r and pathlib.PurePosixPath(r).name not in existentes)
+        if miss:
+            res.append((c.name, miss))
+    lineas = ["# Referencias que faltan en las skills", "",
+              "Generado con `python3 scripts/skills.py faltas`. Cada fila es un fichero que el SKILL.md cita y que no está en su carpeta.",
+              "Algunas son ejemplos o rutas de proyecto y no hacen falta; las demás son dependencias reales.", "",
+              "| Skill | Nº | Ficheros citados que no están |", "|---|---|---|"]
+    for n, m in res:
+        lineas.append(f"| {n} | {len(m)} | {', '.join(m[:15])}{' …' if len(m) > 15 else ''} |")
+    (RAIZ.parent / "FALTAN.md").write_text("\n".join(lineas) + "\n", encoding="utf-8")
+    print(f"{len(res)} skills con referencias que faltan -> FALTAN.md")
+    return 0
+
+
 if __name__ == "__main__":
     orden = sys.argv[1] if len(sys.argv) > 1 else ""
     if orden == "validar":
         sys.exit(validar())
     if orden == "indice":
         sys.exit(indice())
+    if orden == "faltas":
+        sys.exit(faltas())
     print(__doc__)
     sys.exit(2)
