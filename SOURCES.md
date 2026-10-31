@@ -18,7 +18,7 @@ Las del repo `skills-lock.json` se instalaron con `npx skills add`; el hash es e
 | brand | nextlevelbuilder/ui-ux-pro-max-skill | .claude/skills/brand/SKILL.md | 5c99d65bec44 | github (npx skills add) |
 | break-ui | emilkowalski/skills | skills/break-ui/SKILL.md | 60ada6766292 | github (npx skills add) |
 | clonar-academia | subida por el responsable | — | — | archivo .skill |
-| clonar-proyecto | subida por el responsable | — | — | archivo .skill |
+| clonar-proyecto | subida por el responsable + references reconstruidas (deploy, stacks, bugs-primer-deploy) desde un chat del 2026-06-11 | — | — | archivo .skill; references reconstruidas, verificar contra el original si existe |
 | debug-html-monolito | subida por el responsable | — | — | archivo .skill |
 | deep-research | subida por el responsable | — | — | archivo .skill |
 | design | nextlevelbuilder/ui-ux-pro-max-skill | .claude/skills/design/SKILL.md | 63b2e20bf06d | github (npx skills add) |

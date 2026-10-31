@@ -10,7 +10,7 @@ Algunas son ejemplos o rutas de proyecto y no hacen falta; las demás son depend
 | auditoria-ux-visual | 13 | CONTEXT_ADN.md, PERSONAJE.md, nav-chunks.js, references/contrast-guide.md, references/darkmode-checklist.md, references/device-quirks.md, references/environment-fragmentation.md, references/feedback-states.md, references/inline-styles-contrast.md, references/responsive-checklist.md, references/typography-system.md, scripts/cache-bust.js, tema-hud.js |
 | brand | 2 | assets/design-tokens.json, docs/brand-guidelines.md |
 | clonar-academia | 126 | -html.json, AUDITORIA-FOCO-TEORIA-2026-10-18.md, COORDINACION.md, GUIA-EXPLICACION-EXHAUSTIVA.md, GUIA-JUEGOS-E-INGLES-BILINGUE.md, INVESTIGACION-JUEGOS-MEMORIZAR-2026-10-03.md, PLAN-REVISION-FASE4-VISUAL.md, REPASO-PROACTIVO.md, _plantilla/modulo-template.html, academia-logros-ui.js, academia-logros.js, app-tools.js, auditar-bilingue.js, auditar-pantallas.js, auditar-pistas.js … |
-| clonar-proyecto | 16 | ALCANCE_CLON.md, COORDINACION.md, DECISIONES.md, DEUDA_ORIGEN.md, SEED_DATA.md, bundle.js, chunk.js, config-destino.js, config.js, manifest.json, package.json, references/bugs-primer-deploy.md, references/deploy.md, references/stacks.md, sw.js … |
+| clonar-proyecto | 13 | ALCANCE_CLON.md, COORDINACION.md, DECISIONES.md, DEUDA_ORIGEN.md, SEED_DATA.md, bundle.js, chunk.js, config-destino.js, config.js, manifest.json, package.json, sw.js, version.json |
 | debug-html-monolito | 8 | index.html, logros-3primaria.js, panel-profe.html, paso-a-paso.js, quiz-engine.js, scripts/generar-1eso.js, sonidos.js, sw.js |
 | deep-research | 1 | run_manifest.json |
 | design | 2 | assets/design-tokens.json, docs/brand-guidelines.md |
