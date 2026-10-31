@@ -1,0 +1,10 @@
+{
+  "orden": ["Diseño y marca", "Animación y movimiento", "Web, código y pruebas", "Metodología y proyectos", "Educación y ventas"],
+  "categorias": {
+    "Diseño y marca": ["frontend-design", "ui-ux-pro-max", "ui-styling", "design", "design-system", "banner-design", "slides", "brand", "orange-style", "auditoria-ux-visual", "prototype"],
+    "Animación y movimiento": ["animate", "animate-expo", "animation-performance", "animation-vocabulary", "apple-design", "emil-design-eng", "find-animation-opportunities", "improve-animations", "review-animations", "remove-animations"],
+    "Web, código y pruebas": ["threejs", "webapp-testing", "debug-html-monolito", "artifact-react-components", "html2pdf-export", "write-swift", "svg-angulos-poligono", "ask-sonner", "mobile-native", "break-ui", "pick-ui-library"],
+    "Metodología y proyectos": ["superpowers", "clonar-proyecto", "documentador-contexto-proyecto", "deep-research", "sistema-cognitivo"],
+    "Educación y ventas": ["ventas-b2b", "medi-adhd", "auditoria-pedagogica-jogasan", "clonar-academia"]
+  }
+}
