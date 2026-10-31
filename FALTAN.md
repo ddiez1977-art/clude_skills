@@ -22,4 +22,4 @@ Algunas son ejemplos o rutas de proyecto y no hacen falta; las demás son depend
 | slides | 2 | assets/design-tokens.json, docs/brand-guidelines.md |
 | ui-styling | 2 | assets/design-tokens.json, docs/brand-guidelines.md |
 | ui-ux-pro-max | 4 | MASTER.md, app.json, composer.json, package.json |
-| webapp-testing | 40 | PLAN-REVISION-FASE4-VISUAL.md, auditar-modulos-navegador.js, clonar-proyecto/references/bugs-netlify-firebase.md, config.js, console_logging.py, element_discovery.py, index.html, nav-chunks.js, probar-apuntes.js, probar-bilingue.js, probar-figura-zoom.js, probar-flujo-alumno.js, probar-hueco-sin-traduccion.js, probar-invitado.js, probar-juegos-nuevos.js … |
+| webapp-testing | 33 | PLAN-REVISION-FASE4-VISUAL.md, auditar-modulos-navegador.js, clonar-proyecto/references/bugs-netlify-firebase.md, config.js, index.html, nav-chunks.js, probar-apuntes.js, probar-bilingue.js, probar-figura-zoom.js, probar-flujo-alumno.js, probar-hueco-sin-traduccion.js, probar-invitado.js, probar-juegos-nuevos.js, probar-juegos-regresion.js, probar-operaciones-gen.js … |
